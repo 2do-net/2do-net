@@ -1,0 +1,17 @@
+
+<h2>Ideas</h2>
+
+<div *ngFor="let idea of ideas">
+
+  <h3>
+    <a [title]="idea.name + ' details'">
+      {{ idea.name }}
+    </a>
+  </h3>
+
+  <p *ngIf="idea.summary">
+    summary: {{ idea.summary }}
+  </p>
+
+
+</div>
